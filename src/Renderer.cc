@@ -29,9 +29,12 @@ glfwMakeContextCurrent(Engine::m_window);
 
 void Engine::mainloop()
 {
-
 while(!glfwWindowShouldClose(Engine::m_window))
 {
+    glClearColor(0.2f, 0.3f, 0.3f, 1.0f);
+    glClear(GL_COLOR_BUFFER_BIT);
+
+
     glfwSwapBuffers(Engine::m_window);
     glfwPollEvents();    
 }
