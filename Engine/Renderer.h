@@ -5,10 +5,10 @@
 class Engine
 {
     public:
-    void window();
+    void window(const char* name,int width,int height);
     void ogl_init();
     void mainloop();
     void cleanup();
     private:
-    
+
 };
