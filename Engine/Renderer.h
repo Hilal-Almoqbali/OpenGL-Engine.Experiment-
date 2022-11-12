@@ -10,5 +10,5 @@ class Engine
     void mainloop();
     void cleanup();
     private:
-
+    GLFWwindow* m_window;
 };
