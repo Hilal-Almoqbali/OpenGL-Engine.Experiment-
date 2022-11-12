@@ -1,11 +1,11 @@
 #include<Renderer.h>
 
-Renderer::ogl_init()
+void Engine::ogl_init()
 {
 
 }
 
-Renderer::window()
+void Engine::window()
 {
     glfwInit();
     glfwWindowHint(GLFW_CONTEXT_VERSION_MAJOR, 3);
@@ -16,17 +16,17 @@ if (window == NULL)
 {
     std::cout << "Failed to create GLFW window" << std::endl;
     glfwTerminate();
-    return -1;
+    //return -1;
 }
 glfwMakeContextCurrent(window);
 }
 
-Renderer::mainloop()
+void Engine::mainloop()
 {
 
 }
 
-Renderer::cleanup()
+void Engine::cleanup()
 {
 
 }
