@@ -18,7 +18,7 @@ void Engine::window(const char* name,int width,int height)
     glfwWindowHint(GLFW_OPENGL_PROFILE, GLFW_OPENGL_CORE_PROFILE);
     Engine::m_window = glfwCreateWindow(width, height, name, NULL, NULL);
     
-if (window == NULL)
+if (m_window == NULL)
 {
     std::cout << "Failed to create GLFW window" << std::endl;
     glfwTerminate();

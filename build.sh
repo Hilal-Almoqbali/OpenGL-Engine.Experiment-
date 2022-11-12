@@ -1,0 +1,1 @@
+g++ ./src/*.cc ./src/*.c -I include -I Engine -lglfw
