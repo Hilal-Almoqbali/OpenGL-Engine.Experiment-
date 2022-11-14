@@ -25,6 +25,7 @@ if (m_window == NULL)
     //return -1;
 }
 glfwMakeContextCurrent(Engine::m_window);
+void gui_init();
 }
 
 void Engine::mainloop()
@@ -33,6 +34,8 @@ while(!glfwWindowShouldClose(Engine::m_window))
 {
     glClearColor(0.2f, 0.3f, 0.3f, 1.0f);
     glClear(GL_COLOR_BUFFER_BIT);
+    void gui_frame();
+    void gui();
 
 
     glfwSwapBuffers(Engine::m_window);
