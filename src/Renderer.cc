@@ -17,6 +17,8 @@ void Engine::window(const char* name,int width,int height)
     glfwWindowHint(GLFW_CONTEXT_VERSION_MINOR, 3);
     glfwWindowHint(GLFW_OPENGL_PROFILE, GLFW_OPENGL_CORE_PROFILE);
     Engine::m_window = glfwCreateWindow(width, height, name, NULL, NULL);
+    glViewport(0, 0,800, 600);
+
     
 if (m_window == NULL)
 {
@@ -35,7 +37,6 @@ while(!glfwWindowShouldClose(Engine::m_window))
     glClearColor(0.2f, 0.3f, 0.3f, 1.0f);
     glClear(GL_COLOR_BUFFER_BIT);
     void gui_frame();
-    void gui();
 
 
     glfwSwapBuffers(Engine::m_window);
@@ -45,6 +46,9 @@ while(!glfwWindowShouldClose(Engine::m_window))
 
 void Engine::cleanup()
 {
-glfwTerminate();
+	/*ImGui_ImplOpenGL3_Shutdown();
+	ImGui_ImplGlfw_Shutdown();
+	ImGui::DestroyContext();*/
+    glfwTerminate();
 //return 0;
 }
