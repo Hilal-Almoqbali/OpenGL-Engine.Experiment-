@@ -1,6 +1,6 @@
 #pragma once
-#include<stdio.h>
-
+#include <stdio.h>
+#include <MAIN/Application.h>
 
 extern Engine::Application* Engine::CreateApplication();//ÓÉclientÉú³É
 
