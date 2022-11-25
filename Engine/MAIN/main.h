@@ -3,7 +3,6 @@
 #include <MAIN/Application.h>
 
 extern Engine::Application* Engine::CreateApplication();//ÓÉclientÉú³É
-
 int main(int argc,char **argv) {
 	printf("Hello, Engine!");
 	auto app = Engine::CreateApplication();

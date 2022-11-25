@@ -1,9 +1,10 @@
 #include "Application.h"
-
+#include <window/window.h>
 namespace Engine {
 
 	Application::Application()
 	{
+         
 	}
 	
 	
@@ -15,6 +16,13 @@ namespace Engine {
 	
 	
 	void Application:: Run() {//game loop
-		while (true);
+      window win;
+      win.windowinit();
+
+		while (win.isitrunning())
+        {
+          win.windowframe();
+        }
+    
 	}
 }
